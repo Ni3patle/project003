@@ -1,11 +1,29 @@
 from selenium import webdriver
 import pytest
 
-@pytest.fixture()
-def setup(request):
-    driver = webdriver.Chrome()
-    driver.get("https://admin-demo.nopcommerce.com/")
-    request.cls.driver = driver
 
-    yield driver
-    driver.close()
+@pytest.fixture()
+def setup(browser):
+    if browser == "chrome" :
+        driver = webdriver.Chrome()
+        print("Launching Chrome Browser.....")
+    elif browser == "firefox" :
+        driver = webdriver.Firefox(executable_path="C:\\geckodriver.exe")
+        print("Launching Firefox Browser.....")
+    else:
+        driver = webdriver.Chrome()
+        print("Launching Chrome Browser.....")
+    return  driver
+
+
+
+def pytest_addoption(parser):
+    parser.addoption("--browser")
+
+@pytest.fixture()
+def browser(request):
+    return request.config.getoption("--browser")
+
+
+
+

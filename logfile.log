@@ -1,0 +1,5 @@
+ 2022-07-02 16:04:25,697: INFO: utilities.customLogger: ********* Test__01_Login *********
+ 2022-07-02 16:04:25,697: INFO: utilities.customLogger: ********* Verifying Home Page *********
+ 2022-07-02 16:04:33,613: INFO: utilities.customLogger: ****** Home Page Title Test is Passed *******
+ 2022-07-02 16:04:36,356: INFO: utilities.customLogger: ****** Verifying Login Test *******
+ 2022-07-02 16:04:56,560: INFO: utilities.customLogger: ****** Login Test is Passed *******
