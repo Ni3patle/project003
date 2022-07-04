@@ -24,6 +24,16 @@ def pytest_addoption(parser):
 def browser(request):
     return request.config.getoption("--browser")
 
+############################# html report ############################
 
+def pytest_configure(config):
+    config._metadata['Project Name']= 'Nop Commerce'
+    config._metadata['Module Name']= 'Customers'
+    config._metadata['tester']='Nitin S.Patle'
+
+@pytest.mark.optionalhook
+def pytest_metadata(metadata):
+    metadata.pop("JAVA_HOME",None)
+    metadata.pop("Plugins",None)
 
 

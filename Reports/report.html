@@ -243,12 +243,12 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>report.html</h1>
-    <p>Report generated on 03-Jul-2022 at 00:27:31 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 05-Jul-2022 at 00:12:15 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
-        <td>JAVA_HOME</td>
-        <td>C:\jdk-18.0.1.1</td></tr>
+        <td>Module Name</td>
+        <td>Customers</td></tr>
       <tr>
         <td>Packages</td>
         <td>{"pluggy": "1.0.0", "py": "1.11.0", "pytest": "7.1.2"}</td></tr>
@@ -256,14 +256,17 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Platform</td>
         <td>Windows-10-10.0.19044-SP0</td></tr>
       <tr>
-        <td>Plugins</td>
-        <td>{"forked": "1.4.0", "html": "3.1.1", "metadata": "2.0.1", "xdist": "2.5.0"}</td></tr>
+        <td>Project Name</td>
+        <td>Nop Commerce</td></tr>
       <tr>
         <td>Python</td>
-        <td>3.10.5</td></tr></table>
+        <td>3.10.5</td></tr>
+      <tr>
+        <td>tester</td>
+        <td>Nitin S.Patle</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 35.54 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>3 tests ran in 68.96 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -277,18 +280,42 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">testCases/test_login.py::Test__01_Login::test_Login</td>
-          <td class="col-duration">31.68</td>
+          <td class="col-name">testCases/test_login.py::Test__01_Login::test_homePageTitle</td>
+          <td class="col-duration">8.13</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching Chrome Browser.....
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_login.py:21 ********* Test__01_Login *********
+INFO     root:test_login.py:22 ********* Verifying Home Page *********
+INFO     root:test_login.py:31 ****** Home Page Title Test is Passed *******<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
-          <td class="col-name">testCases/test_login.py::Test__01_Login::test_homePageTitle</td>
-          <td class="col-duration">23.90</td>
+          <td class="col-name">testCases/test_login.py::Test__01_Login::test_Login</td>
+          <td class="col-duration">18.07</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching Chrome Browser.....
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_login.py:40 ****** Verifying Login Test *******
+INFO     root:test_login.py:54 ****** Login Test is Passed *******<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testCases/test_login_ddt.py::Test_02_DDT_Login::test_Login_ddt</td>
+          <td class="col-duration">41.46</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching Chrome Browser.....
+<br/> ------------------------------Captured stdout call------------------------------ <br/>Number of Rows :  5
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     root:test_login_ddt.py:17 ****** Test_02_DDT_Login *******
+INFO     root:test_login_ddt.py:18 ****** Verifying Login DDT Test *******
+INFO     root:test_login_ddt.py:44 **** Passed ****
+INFO     root:test_login_ddt.py:56 **** Passed ****
+INFO     root:test_login_ddt.py:56 **** Passed ****
+INFO     root:test_login_ddt.py:56 **** Passed ****
+INFO     root:test_login_ddt.py:61 ****** Login DDT Test Passed ******
+INFO     root:test_login_ddt.py:70 ************ End of Login DDt Test *************
+INFO     root:test_login_ddt.py:71 ****************** Completed TC_Login_DDT_002 ************************<br/></div></td></tr></tbody></table></body></html>
